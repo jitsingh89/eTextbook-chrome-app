@@ -1,0 +1,100 @@
+/* CSS file placeholder. */
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: rgb(77,86,94);
+  background-image: url("../assets/images/BGPattern_small.png");
+}
+
+.fullScreen
+{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.splashScreenIcon
+{
+  position:absolute;
+  right: 10px;
+  top: -50px;
+  width: 200px;
+}
+
+.fullScreenWithTopBar
+{
+  width: 100%;
+  position:absolute;
+  left: 0px;
+  top: 40px;
+  bottom: 0px;
+}
+
+.topBarOuterContainer
+{
+  width: 100%;
+  height: 40px;
+  background-image: url("../assets/images/TopBar_Texture.png");
+}
+
+.eTextBookText
+{
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  height: 35px;
+}
+
+.libraryIcon
+{
+  height: 35px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+
+.libraryScreenContainer
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(77,86,94);
+  background-image: url("../assets/images/BGPattern_small.png");
+  background-repeat:repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.ePubPDFIconContainer
+{
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.ePubLogo
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.PDFLogo
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}

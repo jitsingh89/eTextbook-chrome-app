@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head data-ng-csp>
+  <title>eTextbooks</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body ng-controller="MainController">
+ <div id="readiumScreen" class="fullScreenWithTopBar" ng-show="screenIndex==1">
+   <iframe id="iframeEpub" src="apps/epub/index.html" class="fullScreen"></iframe>
+ </div>
+ <div id="pdfScreen" class="fullScreenWithTopBar" ng-show="screenIndex==2">
+   <iframe src="apps/pdf/index.html" class="fullScreen"></iframe>
+ </div>
+ <div id="topBar" class="topBarOuterContainer" ng-click="showLibraryScreen()" ng-show="screenIndex==1 || screenIndex==2">
+   <img class="eTextBookText" height="50" src="assets/images/eTextBooks_txt.png"></img>
+   <img id="libraryIcon" height="100%" class="libraryIcon" src="assets/images/Library_icon.png"></img>
+   
+ </div>
+ <div id="libraryScreen" class="libraryScreenContainer" ng-show="screenIndex==0">
+   <div class="ePubPDFIconContainer">
+     <div class="ePubLogo" ng-click="showePubScreen()">
+       <img width="100%" height="100%" src="assets/images/epub_logo.png"></img>
+     </div>
+     <div class="PDFLogo" ng-click="showPDFScreen()">
+       <img width="100%" height="100%" src="assets/images/pdf.png"></img>
+     </div>
+   </div>
+   <img class="splashScreenIcon" src="assets/images/splashscreen_main.png"></img>
+ </div>
+</body>
+</html>
